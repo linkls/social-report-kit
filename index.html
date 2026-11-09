@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>职场汇报话术包 · 12 节手册（本期开放 3 节正文）</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+html,body{background:#F1EAE1}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:#33403D;font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:430px;margin:0 auto;background:#FAF7F2;min-height:100vh;box-shadow:0 0 60px rgba(80,90,84,.08)}
+@media(min-width:900px){
+  .wrap{max-width:1060px;display:flex;align-items:flex-start;background:#FAF7F2;padding:0}
+  .side{width:266px;flex:0 0 266px;position:sticky;top:0;height:100vh;overflow-y:auto;background:#F5EFE7;border-right:1px solid #EAE1D5;padding:26px 16px 40px}
+  .main{flex:1;min-width:0;padding:0 34px 70px}
+  .mobilenav{display:none}
+  .topbar{display:block !important}
+}
+.main{padding:0 20px 70px}
+.side{display:none}
+.mobilenav{display:block;position:sticky;top:0;z-index:30;background:rgba(250,247,242,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid #EFE8DF;padding:10px 0 9px}
+.mobilenav .mrow{display:flex;gap:7px;overflow-x:auto;padding:0 16px;-webkit-overflow-scrolling:touch}
+.mobilenav .mrow::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto;white-space:nowrap;font-size:12px;font-weight:700;color:#6B7A76;border:1px solid #EAE1D5;
+  background:#fff;border-radius:999px;padding:5px 12px;text-decoration:none}
+.mchip.on{background:#4E8C84;border-color:#4E8C84;color:#fff}
+
+/* ---------- 通用 ---------- */
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#9AA8A4;font-weight:600}
+.h1{font-size:28px;line-height:1.3;font-weight:800;letter-spacing:-.01em}
+.lede{color:#63736F;font-size:14.5px}
+.tag{display:inline-block;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:700;background:#EAF3F0;color:#4E8C84}
+.tag.a{background:#FBEADC;color:#B46B3C}.tag.c{background:#ECE9F7;color:#6E65A8}
+.tag.d{background:#E3ECF5;color:#4B7196}
+.muted{color:#8C9A96;font-size:12.5px;line-height:1.8}
+.card{background:#fff;border-radius:22px;padding:20px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07)}
+.rule{height:1px;background:#EFE8DF;margin:22px 0}
+.kicker{font-size:12px;letter-spacing:.16em;color:#9AA8A4;font-weight:700}
+
+/* ---------- 封面 ---------- */
+.cover{padding:40px 0 10px}
+.cover .h1{margin:12px 0 10px}
+.cover .lede{margin:0 0 16px}
+.cover .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.chip{background:#fff;border:1px solid #EEE5DA;border-radius:999px;padding:6px 13px;font-size:12.5px;color:#5C6B67;font-weight:600}
+.topbar{display:none}
+
+/* ---------- 目录（侧栏） ---------- */
+.side .st{font-size:12px;letter-spacing:.16em;color:#9AA8A4;font-weight:700;margin:0 6px 14px}
+.side .sp{font-size:12.5px;font-weight:800;color:#33403D;margin:20px 6px 8px;display:flex;align-items:center;gap:7px}
+.side .sp .n{width:20px;height:20px;border-radius:7px;background:#EDE5DA;color:#8C9A96;font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.side a{list-style:none;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:13px;color:#6B7A76;
+  padding:7px 10px;border-radius:10px;line-height:1.5}
+.side a:hover{background:#EFE7DC}
+.side a .st2{flex:0 0 auto;font-size:10px;font-weight:800;color:#fff;background:#71B0A4;border-radius:5px;padding:1px 5px}
+.side a .st3{flex:0 0 auto;font-size:10px;font-weight:700;color:#B0B8B4;border:1px solid #E3DCD2;border-radius:5px;padding:1px 5px}
+.side a.open{color:#33403D;font-weight:700;background:#fff;box-shadow:0 3px 10px rgba(74,90,84,.06)}
+
+/* ---------- 8 类人格 ---------- */
+.types{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+@media(min-width:900px){.types{grid-template-columns:repeat(4,1fr)}}
+.tcard{background:#fff;border-radius:16px;padding:13px 13px;box-shadow:0 4px 14px rgba(74,90,84,.06);border-left:3px solid #71B0A4}
+.tcard.b1{border-left-color:#E9A178}.tcard.b2{border-left-color:#8E86C4}.tcard.b3{border-left-color:#5B7FA6}.tcard.b4{border-left-color:#C9A15E}
+.tcard .tn{font-size:14px;font-weight:800;line-height:1.4}
+.tcard .td{font-size:12px;color:#8C9A96;margin-top:5px;line-height:1.65}
+
+/* ---------- 速查表 ---------- */
+.qtwrap{background:#fff;border-radius:22px;padding:16px 12px 12px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:14px}
+.qt{width:100%;border-collapse:collapse;table-layout:fixed}
+.qt th,.qt td{border-bottom:1px dashed #EFE8DF;padding:9px 7px;vertical-align:top;text-align:left;font-size:11.5px;line-height:1.6}
+.qt th{font-size:11.5px;color:#8C9A96;font-weight:800}
+.qt tr:last-child td{border-bottom:0}
+.qt .pn{font-weight:800;color:#33403D;font-size:12px}
+.qt .sg{color:#8C9A96}
+.qt .ans{color:#4B5C58;font-weight:600}
+.qt th:nth-child(1),.qt td:nth-child(1){width:74px}
+.qt th:nth-child(2),.qt td:nth-child(2){width:82px}
+
+/* ---------- 章节 ---------- */
+.part{margin:38px 0 0}
+.part-h{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.part-h .pn{width:30px;height:30px;border-radius:10px;background:#4E8C84;color:#fff;font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.part-h .pt{font-size:18px;font-weight:800}
+.part-sub{color:#9AA8A4;font-size:12.5px;margin:0 0 16px 40px}
+.ch{background:#fff;border-radius:24px;padding:22px 18px;box-shadow:0 8px 26px rgba(74,90,84,.08);margin-bottom:16px;scroll-margin-top:64px}
+.ch .ck{font-size:11.5px;letter-spacing:.1em;color:#B0895F;font-weight:800}
+.ch .ct{font-size:21px;font-weight:800;line-height:1.4;margin:7px 0 4px}
+.ch .cs{font-size:13px;color:#9AA8A4;margin-bottom:6px}
+.blk{margin-top:18px;padding-top:16px;border-top:1px dashed #EFE8DF}
+.blk:first-of-type{border-top:0;padding-top:4px}
+.lbl{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:800;margin-bottom:11px}
+.lbl .n{width:22px;height:22px;border-radius:8px;background:#EAF3F0;color:#4E8C84;font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.blk p{font-size:14.5px;line-height:1.78;color:#4B5C58;margin-bottom:9px}
+.blk p:last-child{margin-bottom:0}
+.blk ul{list-style:none}
+.blk li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.75;color:#4B5C58;padding:5px 0}
+.blk li .d{flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#9CC4BC;margin-top:11px}
+.blk li b{color:#33403D}
+.say{display:flex;gap:12px;align-items:flex-start;background:#FAF7F2;border:1px solid #EFE7DC;border-radius:16px;padding:14px 15px;margin-bottom:10px}
+.say .sn{flex:0 0 auto;width:22px;height:22px;border-radius:8px;background:#71B0A4;color:#fff;font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px}
+.say .st{flex:1}
+.say .st .sh{font-size:12px;font-weight:800;color:#B0895F;margin-bottom:4px;letter-spacing:.02em}
+.say .st .sq{font-size:15px;line-height:1.78;color:#33403D}
+.say .st .sn2{font-size:12.5px;color:#9AA8A4;margin-top:6px}
+.say.b2 .sn{background:#E9A178}.say.b3 .sn{background:#8E86C4}
+.prac{background:#EAF4F1;border-radius:18px;padding:16px 15px;margin-top:16px}
+.prac .lbl .n{background:#4E8C84;color:#fff}
+.prac li .d{background:#71B0A4}
+.prac .lbl{color:#2F5F59}
+.prac p,.prac li{color:#3B5B57}
+.next{margin-top:14px;background:#FBEADC;border-radius:16px;padding:14px 15px}
+.next .lbl .n{background:#E9A178;color:#fff}
+.next .lbl{color:#8A5A2E}
+.next p{color:#6B4B2C}
+.chfoot{display:flex;gap:10px;margin-top:16px}
+.chfoot .rbtn{flex:1;text-align:center;padding:12px;border:0;border-radius:14px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit;
+  background:#fff;border:1px solid #E9E1D6;color:#6B7A76;text-decoration:none}
+
+.tbd{background:#FBF7F0;border:1px dashed #E3DCD2;border-radius:20px;padding:20px 18px;margin-bottom:14px}
+.tbd .tt{font-size:16px;font-weight:800;color:#8C9A96}
+.tbd .td{font-size:13px;color:#A5AFA9;margin-top:7px;line-height:1.75}
+.tbd .td b{color:#7C8B87}
+
+.foot{text-align:center;color:#B0B8B4;font-size:11.5px;line-height:1.9;margin-top:34px;padding-top:20px;border-top:1px dashed #EFE8DF}
+.toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%) translateY(20px);background:rgba(40,52,49,.93);
+  color:#fff;padding:11px 20px;border-radius:14px;font-size:14px;opacity:0;pointer-events:none;transition:all .28s ease;z-index:99}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---------- 产品5 追加 ---------- */
+.disc{background:#F7F3EC;border-radius:16px;padding:13px 14px;margin-top:18px;font-size:12.5px;line-height:1.8;color:#7C8A86}
+.disc b{color:#54635F}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<aside class="side">
+<div class="st">CONTENTS</div>
+<div class="sp"><span class="n">1</span>周报与日报</div>
+<a href="#c1" data-t="c1"><span class="st2">本期</span>01 周报三段式怎么写</a>
+<a href="#t2" data-t="t2"><span class="st3">框架</span>02 日报别写成流水账</a>
+<a href="#t3" data-t="t3"><span class="st3">框架</span>03 汇报节奏与篇幅</a>
+<div class="sp"><span class="n">2</span>请假与临时离岗</div>
+<a href="#t4" data-t="t4"><span class="st3">框架</span>04 请假怎么开口</a>
+<a href="#t5" data-t="t5"><span class="st3">框架</span>05 临时离岗怎么交代</a>
+<a href="#t6" data-t="t6"><span class="st3">框架</span>06 回来怎么接回节奏</a>
+<div class="sp"><span class="n">3</span>要资源与加薪</div>
+<a href="#t7" data-t="t7"><span class="st3">框架</span>07 要资源怎么开口</a>
+<a href="#c8" data-t="c8"><span class="st2">本期</span>08 加薪怎么谈</a>
+<a href="#t9" data-t="t9"><span class="st3">框架</span>09 报价被压怎么回</a>
+<div class="sp"><span class="n">4</span>顶锅与背锅</div>
+<a href="#c10" data-t="c10"><span class="st2">本期</span>10 背锅怎么讲</a>
+<a href="#t11" data-t="t11"><span class="st3">框架</span>11 责任不清怎么留证据</a>
+<a href="#t12" data-t="t12"><span class="st3">框架</span>12 事后复盘怎么写</a>
+<div class="sp"><span class="n">★</span>速查与说明</div>
+<a href="#quick" data-t="quick">场景速查表</a>
+<a href="#howto" data-t="howto">怎么用这本手册</a>
+</aside>
+  <div class="main">
+<div class="mobilenav"><div class="mrow">
+<a href="#top" class="mchip" data-c="top">封面</a>
+<a href="#quick" class="mchip" data-c="quick">速查表</a>
+<a href="#c1" class="mchip" data-c="c1">01 周报</a>
+<a href="#c8" class="mchip" data-c="c8">08 加薪</a>
+<a href="#c10" class="mchip" data-c="c10">10 背锅</a>
+<a href="#howto" class="mchip" data-c="howto">怎么用</a>
+</div></div>
+    <section class="cover" id="top">
+      <div class="eyebrow">WORK REPORT KIT</div>
+      <h1 class="h1">职场汇报话术包</h1>
+      <p class="lede">周报、请假、加薪、背锅 —— 12 节手册里先给你 3 节正文。<br>遇到要开口的场合，先判断，再开口。</p>
+      <div class="chips">
+        <span class="chip">4 部分 12 节</span>
+        <span class="chip">本期开放 3 节正文</span>
+        <span class="chip">1 张场景速查表</span>
+        <span class="chip">每节配 1 个练习</span>
+      </div>
+    </section>
+
+    <div class="card">
+      <div class="kicker">怎么用这本手册</div>
+      <p>职场里卡壳，多半不是不会说，而是没先判断：<b>这件事该讲到什么程度、对方真正在意什么、我希望他做什么</b>。</p>
+      <p>全书共 4 部分 12 节，<b>本期开放 3 节正文</b>（01 周报三段式 / 08 加薪怎么谈 / 10 背锅怎么讲），其余章节目录已列出，正文待后续展开。</p>
+      <div class="rule"></div>
+      <p class="muted">每节正文固定五段：<b>场景 → 先判断什么 → 三种具体说法 → 对方继续劝说怎么回 → 今天能完成的小练习</b>。手册是自我观察与沟通参考工具，不构成专业心理评估、诊断或医疗建议；话术是参考句不是标准答案，请按你面对的人和场合调整。</p>
+    </div>
+
+    <section id="quick">
+      <h2>场景速查表</h2>
+      <p class="muted">来不及读整节时看这张表：认出场景 → 用一句话 → 补一个动作。</p>
+      <div class="qtwrap">
+        <table class="qt">
+          <thead><tr><th>场景</th><th>什么时候用</th><th>一句话怎么说</th><th>补一个动作</th></tr></thead>
+          <tbody>
+<tr><td class="pn">写周报</td><td class="sg">周五要交，老板只扫一眼</td><td class="ans">结论先行，再给卡点</td><td class="sg">后面附上要谁做什么</td></tr>
+<tr><td class="pn">写日报</td><td class="sg">每天要交，容易写成流水账</td><td class="ans">今天动了什么、明天动什么</td><td class="sg">把流水账改成三行</td></tr>
+<tr><td class="pn">汇报节奏</td><td class="sg">汇报太密或太疏</td><td class="ans">固定频率加固定模板</td><td class="sg">提前半天把数字备好</td></tr>
+<tr><td class="pn">请一天假</td><td class="sg">临时要请一天</td><td class="ans">先说时间范围和交接人</td><td class="sg">交接清单提前发出去</td></tr>
+<tr><td class="pn">临时离岗</td><td class="sg">临时被叫走</td><td class="ans">给离开和回来的时间</td><td class="sg">说清谁能拍板</td></tr>
+<tr><td class="pn">回来接节奏</td><td class="sg">离岗后信息断了</td><td class="ans">先补一句进度再补细节</td><td class="sg">约一个十分钟的同步</td></tr>
+<tr><td class="pn">要资源</td><td class="sg">手上的活超负荷</td><td class="ans">先讲交付目标再讲缺口</td><td class="sg">把要的东西写成清单</td></tr>
+<tr><td class="pn">谈加薪</td><td class="sg">想要一次调整</td><td class="ans">用成果和承担说话</td><td class="sg">给一个可核对的数字</td></tr>
+<tr><td class="pn">报价被压</td><td class="sg">对方要压价</td><td class="ans">先问压价对应哪一项</td><td class="sg">给分档方案</td></tr>
+<tr><td class="pn">被指责任</td><td class="sg">责任落到你头上</td><td class="ans">只讲事实和时间线</td><td class="sg">当场提出补救方案</td></tr>
+<tr><td class="pn">口头分活</td><td class="sg">范围说不清</td><td class="ans">把范围和期限写进消息</td><td class="sg">每次变更留一条记录</td></tr>
+<tr><td class="pn">事后复盘</td><td class="sg">事情没做好</td><td class="ans">写清时间线和可改的环节</td><td class="sg">写下下次要加的一步</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">1</span><span class="pt">周报与日报</span></div>
+      <p class="part-sub">对应场景：写周报 · 写日报 · 汇报节奏</p>
+<article class="ch" id="c1">
+<div class="ck">第 01 节 · 本期正文</div>
+<h2 class="ct">周报三段式怎么写</h2>
+<p class="cs">同样一件事，写法不同，读的人得到的判断很不一样。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>周五下午四点，周报时间到，老板在群里要一份。你这周做了七件事，能写出来的有十几行，但发出去之后没人回。</p>
+<p>问题不在你做得少，在于你写的是流水账：读的人要从十几行里自己拼出「现在到哪了、要我做什么」，通常他就跳过去了。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>这份周报是写给谁看的？</b>他关心的是进度、风险，还是要不要出手？先定读者，再定写法。</span></li>
+<li><span class="d"></span><span><b>这周真的推进了哪一件事？</b>推进一件也值得写。写不出推进，说明这周该换个做法。</span></li>
+<li><span class="d"></span><span><b>有没有需要对方出手的事？</b>没有就别说。需要对方做，就单独写成一句，写清是谁、什么时候。</span></li>
+<li><span class="d"></span><span><b>对方能不能不追问就懂？</b>每写完一行自问一句：他看完要回我问题吗？要，就重写这行。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">结论先行</div><div class="sq">「这周把 X 推进到上线前就差一步，卡在测试口径；Y 按计划周四交付；Z 需要你周三前确认预算。」</div><div class="sn2">适用：对方时间少、只扫结论；或者你和他之间不需要过程沟通。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">进展与风险分开</div><div class="sq">「本周完成 A、B 两项。两个卡点：一是数据口径没统一，等 X 那边；二是测试环境被占用，已约到周三下午。」</div><div class="sn2">适用：跨部门协作，你需要对方知道你在哪儿被卡住。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">目标对齐</div><div class="sq">「按上周定的三件事，这周收掉两件，剩一件顺延到下周，原因是依赖方没到位，我已同步给对方。」</div><div class="sn2">适用：对方不清楚你按什么标准判断「做完了」。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续劝说怎么回</div><ul>
+<li><span class="d"></span><span><b>「其他部门都写了，你这个太简单了。」</b>→ 「那我补上过程部分，结论还是这三行。你看完有想细问的，我随时补充。」</span></li>
+<li><span class="d"></span><span><b>「这个数据准吗？」</b>→ 「口径是按 X 算的，我把计算方式贴在后面。你要换口径，我今天改一版。」</span></li>
+<li><span class="d"></span><span><b>「下周能做完吗？」</b>→ 「按现在的进度能。我把 XX 的时间点写清楚；如果那边延迟，我提前一天告诉你。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>今天把手上这周的事列出来，然后只留三行：结论、卡点、要谁做什么。</span></li>
+<li><span class="d"></span><span>把这三行发给你的直属上级，或者存在随手能翻到的地方。</span></li>
+<li><span class="d"></span><span>记住这个句式：「&lt;b&gt;本周完成了 X；卡点是 Y；需要你在 Z 之前做 W。&lt;/b&gt;」</span></li>
+</ul></div></div>
+<div class="chfoot"><a class="rbtn" href="#quick">回到场景速查表</a></div>
+</article>
+<div class="tbd" id="t2">
+<div class="tt">02 日报别写成流水账</div>
+<div class="td">识别信号：每天按时交，但读的人看不出今天做成了什么<br>改法：改法：把日报从「我做了什么」换成「今天动了什么 / 明天动什么 / 需要谁」三行<br>记住一句：<b>先判断产出而不是时长，再写明天要动的那一件。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t3">
+<div class="tt">03 汇报节奏与篇幅</div>
+<div class="td">识别信号：有人天天问进度，有人半年听不到动静<br>改法：改法：固定频率 + 固定模板，让「没消息」不再等于「没进展」<br>记住一句：<b>把汇报节奏当成交付节奏的一部分来排。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">2</span><span class="pt">请假与临时离岗</span></div>
+      <p class="part-sub">对应场景：请假 · 临时离岗 · 回来接回节奏</p>
+<div class="tbd" id="t4">
+<div class="tt">04 请假怎么开口</div>
+<div class="td">识别信号：请假条只写「有事」，领导追问原因<br>改法：改法：先说时间范围和交接人，再补一句回岗时间<br>记住一句：<b>交接清单比请假理由更能让人放心。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t5">
+<div class="tt">05 临时离岗怎么交代</div>
+<div class="td">识别信号：人被叫走了，消息就断了，没人知道谁在管<br>改法：改法：给离开与回来的时间点，并说清谁能拍板<br>记住一句：<b>留下一个能拍板的人，比留下十个「知悉」有用。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t6">
+<div class="tt">06 回来怎么接回节奏</div>
+<div class="td">识别信号：离岗几天回来，别人已经换了方向<br>改法：改法：先补一句当前进度，再问一句我这边从哪接<br>记住一句：<b>回来先对齐进度，别急着表态。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">3</span><span class="pt">要资源与加薪</span></div>
+      <p class="part-sub">对应场景：要资源 · 谈加薪 · 报价被压</p>
+<div class="tbd" id="t7">
+<div class="tt">07 要资源怎么开口</div>
+<div class="td">识别信号：活越来越多，人还是那几个<br>改法：改法：先讲交付目标和缺口，再讲你要什么<br>记住一句：<b>要资源要给清单，不要给抱怨。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t9">
+<div class="tt">09 报价被压怎么回</div>
+<div class="td">识别信号：对方一句「预算不够」就没了下文<br>改法：改法：先问清压价对应哪一项，再给分档方案<br>记住一句：<b>给两个方案让对方做选择，别让对方做否决。</b> 本节正文待展开。</div>
+</div>
+<article class="ch" id="c8">
+<div class="ck">第 08 节 · 本期正文</div>
+<h2 class="ct">加薪怎么谈</h2>
+<p class="cs">谈的不是辛苦，是承担变了之后怎么定价。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>你想聊一次薪酬调整。真正坐到对方面前，大概只有五分钟。</p>
+<p>很多人准备了十几句心里话，出口时却变成「这段时间有点累」「希望公司能考虑」。这两句都换不来一次调整，因为它们描述的是感受，不是可核对的事实。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>你要谈的是「调整」还是「补偿」？</b>调整是重新定价现在的岗位；补偿是补过去某一段时间。两种说法不能混着讲。</span></li>
+<li><span class="d"></span><span><b>你手上有哪些可核对的东西？</b>做过什么、独占了什么、多扛了什么责任。越具体越好。</span></li>
+<li><span class="d"></span><span><b>你想要的数字是多少？</b>开口前先想清楚数字和底线。现场犹豫会让对方觉得你只是试试。</span></li>
+<li><span class="d"></span><span><b>谈完你希望对方做什么？</b>「我再考虑考虑」等于没谈。要一个下一步：给标准、定时间、走流程。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">用成果说话</div><div class="sq">「过去半年 X 这条线是我独立负责的，从 0 做到现在的量；这类活现在只有我一个人在扛。我想聊聊薪酬和这个责任是不是匹配。」</div><div class="sn2">适用：有明确产出，能被第三方核对。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">用角色变化说话</div><div class="sq">「今年除了 X，我还接了 Y 的对外对接和 Z 的排期，团队里同时做这两件事的只有我。想对齐一下职级或者薪酬。」</div><div class="sn2">适用：职责变宽了，但产出不好量化。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">用区间口径说话</div><div class="sq">「我了解到同岗位在这个区间的范围是 A 到 B，按我现在承担的范围看，更靠近 B。想确认一下公司的区间怎么定。」</div><div class="sn2">适用：你要谈的是数字本身，准备好了被反问。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续劝说怎么回</div><ul>
+<li><span class="d"></span><span><b>「现在大环境不好，明年再说。」</b>→ 「理解。我不要求现在就定，能不能给我一个标准：明年达到什么条件可以调？我按这个准备。」</span></li>
+<li><span class="d"></span><span><b>「你已经是这个价了，能力没问题的。」</b>→ 「能力我这边有把握。我想谈的是承担变了之后的定价，我们可以一起看怎么算。」</span></li>
+<li><span class="d"></span><span><b>「预算要走审批，我看看再说。」</b>→ 「那我准备一页材料：做了什么、现在扛什么、要哪个区间。你看还缺什么，我补上。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>写下三行：我今年新增了什么、现在只有我在做的是什么、我想要的区间是多少。</span></li>
+<li><span class="d"></span><span>把这三行读一遍，把形容词换成事实：不是「比较累」，是「一个人对接了三家」。</span></li>
+<li><span class="d"></span><span>这页东西不发给任何人，先放两周，看你还缺哪一条证据。</span></li>
+</ul></div></div>
+<div class="chfoot"><a class="rbtn" href="#quick">回到场景速查表</a></div>
+</article>
+__TBD_9__
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">4</span><span class="pt">顶锅与背锅</span></div>
+      <p class="part-sub">对应场景：被指责任 · 责任不清 · 事后复盘</p>
+<article class="ch" id="c10">
+<div class="ck">第 10 节 · 本期正文</div>
+<h2 class="ct">背锅怎么讲</h2>
+<p class="cs">会上先止损，会后再定责；全程只讲事实。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>项目出了问题，会上大家的手指到了你这边。你知道问题不全在你，但会议室里此刻只有你在说话。</p>
+<p>这时吃亏的做法是先辩解。辩解会把会议从「解决问题」变成「争谁对」，而你手上通常没有会议室里所有人都有的信息。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>现在要解决的是「定责」还是「止损」？</b>先止损。定责可以会后用记录说话，止损要在会上做。</span></li>
+<li><span class="d"></span><span><b>有哪些事实是可核对的？</b>时间、版本、审批记录、谁在什么时间说过什么。只讲这部分。</span></li>
+<li><span class="d"></span><span><b>你自己那部分是什么？</b>哪怕很小，主动认下来反而更可信，也更容易把讨论带回事实。</span></li>
+<li><span class="d"></span><span><b>你现在要谁做什么？</b>当场要一个动作：关入口、补脚本、给清单。空泛的「我们会处理」等于没动作。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">只讲时间线</div><div class="sq">「这个改动是周三下午合进去的，测试没有覆盖这条路径，问题在周三晚上出现。我先把影响范围确认清楚，半小时后给你结论。」</div><div class="sn2">适用：现场信息不全，你需要时间。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">认下自己那部分</div><div class="sq">「我负责的这段确实有疏漏，我认。但触发点在 A 没有走复核流程，这一段我想写成流程，而不是靠人记得。」</div><div class="sn2">适用：你需要把讨论从人转到机制。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">直接给补救方案</div><div class="sq">「现在能做三件事：一小时内先关掉这个入口；今天出复现脚本；本周把这条路径加进回归测试。我需要 A 那边把改动清单同步给我。」</div><div class="sn2">适用：你还想继续负责这件事。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续劝说怎么回</div><ul>
+<li><span class="d"></span><span><b>「你当时为什么没发现？」</b>→ 「我负责的测试范围里没有这条路径，这是流程上的缺口。我建议这类改动统一走一次复核。」</span></li>
+<li><span class="d"></span><span><b>「别扯这些，先解决问题。」</b>→ 「同意，先解决问题。责任划分我会在复盘文档里写时间线，大家看记录就好。」</span></li>
+<li><span class="d"></span><span><b>「大家都这么干，你别放心上。」</b>→ 「我不是要争对错，我想要的是下次这类改动有人签字，这样对谁都好。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>挑一件你手上正在做的事，写下一条只有你能核对的事实：时间、版本或某条记录。</span></li>
+<li><span class="d"></span><span>把它存在随手能翻到的地方（工作记录、任务描述、聊天存档）。</span></li>
+<li><span class="d"></span><span>记住这个句式：「&lt;b&gt;事情发生在 X 时间，触发条件是 Y，我能确认的部分是 Z，接下来我先做 W。&lt;/b&gt;」</span></li>
+</ul></div></div>
+<div class="chfoot"><a class="rbtn" href="#quick">回到场景速查表</a></div>
+</article>
+<div class="tbd" id="t11">
+<div class="tt">11 责任不清怎么留证据</div>
+<div class="td">识别信号：活是口头派的，出了事没人认<br>改法：改法：把范围、期限、责任写进一条消息，每次变更留一条记录<br>记住一句：<b>留记录不是防同事，是防自己忘。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t12">
+<div class="tt">12 事后复盘怎么写</div>
+<div class="td">识别信号：复盘会开成追责会，说完就散<br>改法：改法：写清时间线与可改的环节，落到下次要加的一步<br>记住一句：<b>复盘只写能改的东西，其余不写。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <section id="howto">
+      <div class="card">
+        <div class="kicker">交付与使用说明</div>
+        <p>这是一份单文件网页资料，拍下后自动发货一条链接，手机浏览器打开就能用，同一条链接可以反复使用。</p>
+        <p class="muted">整个页面是单个网页文件，提前存在手机里断网也能看；手机上先收藏，下次直接点开。本内容为自我观察与沟通参考工具，不构成专业心理评估、诊断或医疗建议。</p>
+      </div>
+      <div class="disc"><b>售后说明</b><br>虚拟资料，付款后不支持退款。页面打不开或显示异常，可在订单里联系售后处理。</div>
+    </section>
+
+    <div class="foot">
+      职场汇报话术包 · 4 部分 12 节，本期开放 3 节正文<br>
+      单文件网页，手机打开即用，断网也能看
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.side a'));
+  var chips=[].slice.call(document.querySelectorAll('.mchip'));
+  function go(e){
+    var href=this.getAttribute('href');
+    if(!href||href.charAt(0)!=='#') return;
+    var el=document.querySelector(href);
+    if(!el) return;
+    e.preventDefault();
+    var top=el.getBoundingClientRect().top+window.pageYOffset-64;
+    window.scrollTo({top:top,behavior:'smooth'});
+  }
+  links.forEach(function(a){a.addEventListener('click',go);});
+  chips.forEach(function(a){a.addEventListener('click',go);});
+
+  var ids=links.map(function(a){return a.getAttribute('data-t');});
+  function highlight(){
+    var y=window.pageYOffset+90, cur='';
+    ids.forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.getBoundingClientRect().top+window.pageYOffset<=y) cur=id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('open',a.getAttribute('data-t')===cur);
+    });
+    chips.forEach(function(a){
+      a.classList.toggle('on',a.getAttribute('data-c')===cur);
+    });
+  }
+  var t=null;
+  window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=null;highlight();},80);});
+  highlight();
+})();
+</script>
+</body>
+</html>
